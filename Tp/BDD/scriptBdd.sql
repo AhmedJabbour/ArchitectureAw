@@ -1,6 +1,6 @@
 CREATE DATABASE Banque;
 
-use Banque;
+use Banks;
 
 CREATE TABLE Client (
     ID_Client INT PRIMARY KEY,
@@ -55,8 +55,8 @@ CREATE TABLE ConseillerBancaire (
 );
 
 
-INSERT INTO Client (Nom, Prenom, Date_de_Naissance, Situation_Familiale, Adresse, Numero_Telephone, Adresse_Email)
+INSERT INTO Client (Nom, Prenom, Date_de_Naissance,Situation_Familiale, Adresse, Numero_Telephone, Adresse_Email)
 VALUES 
-    ('Doe', 'John', '1980-05-15', 'Célibataire', '123 Main Street, Cityville', '+1234567890', 'john.doe@example.com'),
-    ('Smith', 'Jane', '1992-08-25', 'Marié', '456 Oak Avenue, Townsville', '+9876543210', 'jane.smith@example.com'),
-    ('Johnson', 'Bob', '1975-12-10', 'Divorcé', '789 Pine Road, Villageton', '+1122334455', 'bob.johnson@example.com');
+    ('Doe', 'John', '1980/05/15', 'Célibataire', '123 Main Street, Cityville', '+1234567890', 'john.doe@example.com'),
+    ('Smith', 'Jane', '1992/08/25', 'Marié', '456 Oak Avenue, Townsville', '+9876543210', 'jane.smith@example.com'),
+    ('Johnson', 'Bob', '1975/12/10', 'Divorcé', '789 Pine Road, Villageton', '+1122334455', 'bob.johnson@example.com');
