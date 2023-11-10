@@ -1,0 +1,39 @@
+<?php
+
+class Client {
+    // Propriétés de la classe Client
+    public $ID_Client;
+    public $Nom;
+    public $Prenom;
+    public $Adresse;
+
+    // Constructeur de la classe Client
+    public function __construct($ID_Client, $Nom, $Prenom, $Adresse) {
+        $this->ID_Client = $ID_Client;
+        $this->Nom = $Nom;
+        $this->Prenom = $Prenom;
+        $this->Adresse = $Adresse;
+    }
+
+    // Méthode pour obtenir l'ID du client
+    public function getIDClient() {
+        return $this->ID_Client;
+    }
+
+    // Méthode pour obtenir le nom du client
+    public function getNom() {
+        return $this->Nom;
+    }
+
+    // Méthode pour obtenir le prénom du client
+    public function getPrenom() {
+        return $this->Prenom;
+    }
+
+    // Méthode pour obtenir l'adresse du client
+    public function getAdresse() {
+        return $this->Adresse;
+    }
+}
+
+?>
