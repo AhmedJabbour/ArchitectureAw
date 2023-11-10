@@ -4,11 +4,11 @@ require_once 'services\ClientService.php';
 if (isset($_POST['clientID'])) {
     $clientID = $_POST['clientID'];
 
-    // Appeler le service pour obtenir les détails du client
+  
     $clientService = new ClientService();
     $client = $clientService->getClientByID($clientID);
 
-    // Afficher les détails du client
+    
     echo "<h2>Détails du Client</h2>";
     echo "<p><strong>ID_Client:</strong> {$client->ID_Client}</p>";
     echo "<p><strong>Nom:</strong> {$client->Nom}</p>";

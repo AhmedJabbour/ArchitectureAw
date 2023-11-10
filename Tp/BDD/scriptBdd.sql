@@ -13,7 +13,7 @@ CREATE TABLE Client (
     Adresse_Email VARCHAR(255)
 );
 
--- Création de la table Compte_Bancaire
+
 CREATE TABLE CompteBancaire (
     ID_Compte INT PRIMARY KEY,
     Type_de_Compte VARCHAR(50),
@@ -24,7 +24,6 @@ CREATE TABLE CompteBancaire (
     FOREIGN KEY (ID_Client) REFERENCES Client(ID_Client)
 );
 
--- Création de la table Ligne_de_Compte
 CREATE TABLE LigneDeCompte (
     ID_Ligne INT PRIMARY KEY,
     Description VARCHAR(255),
@@ -57,6 +56,6 @@ CREATE TABLE ConseillerBancaire (
 
 INSERT INTO Client (Nom, Prenom, Date_de_Naissance,Situation_Familiale, Adresse, Numero_Telephone, Adresse_Email)
 VALUES 
-    ('Doe', 'John', '1980/05/15', 'Célibataire', '123 Main Street, Cityville', '+1234567890', 'john.doe@example.com'),
-    ('Smith', 'Jane', '1992/08/25', 'Marié', '456 Oak Avenue, Townsville', '+9876543210', 'jane.smith@example.com'),
-    ('Johnson', 'Bob', '1975/12/10', 'Divorcé', '789 Pine Road, Villageton', '+1122334455', 'bob.johnson@example.com');
+    ('Ahmed', 'Jabbour', '1980/05/15', 'Célibataire', '123 Main Street, Cityville', '+1234567890', 'john.doe@example.com'),
+    ('Mehdi', 'telmam', '1992/08/25', 'Marié', '456 Oak Avenue, Townsville', '+9876543210', 'jane.smith@example.com'),
+    ('kamar', 'yess', '1975/12/10', 'Divorcé', '789 Pine Road, Villageton', '+1122334455', 'bob.johnson@example.com');

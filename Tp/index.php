@@ -14,13 +14,13 @@
     <?php
     require_once 'services/ClientService.php';
 
-    // Créer une instance du service client
+    
     $clientService = new ClientService();
 
-    // Appeler une méthode du service pour obtenir la liste des clients
+   
     $clients = $clientService->getListeClients();
 
-    // Afficher la liste des clients
+    
     foreach ($clients as $client) {
         echo "<div class='client-item' data-id='{$client->ID_Client}'>";
         echo "<p><strong>ID_Client:</strong> {$client->ID_Client}</p>";
@@ -36,18 +36,18 @@
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
 $(document).ready(function() {
-    // Gérer le clic sur un client
+ 
     $('.client-item').click(function() {
-        // Récupérer l'ID du client
+   
         var clientID = $(this).data('id');
 
-        // Appeler le script PHP pour obtenir les détails du client
+       
         $.ajax({
             type: 'POST',
             url: 'get_client_details.php',
             data: { clientID: clientID },
             success: function(response) {
-                // Afficher les détails du client dans #details-container
+             
                 $('#details-container').html(response);
             }
         });

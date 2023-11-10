@@ -53,6 +53,6 @@ class ClientDAO {
     
         return $clients;
     }
-    // Ajoutez d'autres méthodes DAO pour gérer les opérations sur les clients (insertion, mise à jour, suppression, etc.)
+   
 }
 ?>

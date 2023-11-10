@@ -13,9 +13,8 @@ class ClientService {
     }
 
     public function getListeClients() {
-        $clients = $this->clientDAO->getListeClients(); // Supposons que vous avez une méthode dans ClientDAO pour obtenir la liste des clients
+        $clients = $this->clientDAO->getListeClients(); 
         return $clients;
     }
-    // Ajoutez d'autres méthodes de service pour gérer la logique métier liée aux clients
-}
+   
 ?>
